@@ -1,0 +1,13 @@
+@import 'color' ;
+html {
+	box-sizing: border-box;
+}
+* {
+	box-sizing: inherit;
+}
+body {
+	margin: 0;
+	padding: 50px 100px;
+	background: $skyblue;
+	font-family: monospace;
+}

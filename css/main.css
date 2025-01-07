@@ -1,0 +1,327 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 50px 100px;
+  background: #00caf2;
+  font-family: monospace;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -25px;
+}
+
+.col {
+  padding: 0 25px;
+}
+
+.body__wrapper {
+  background: url(/images/back.jpg);
+  background-size: 160px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+header .logo {
+  font-weight: 300;
+}
+header .nav__ul li::marker {
+  color: #00caf2;
+}
+header .nav__ul li a {
+  color: #2e2e2e;
+  text-decoration: none;
+}
+
+.home .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 180px 30px 100px;
+}
+.home .col {
+  position: relative;
+}
+.home__triangle {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #ffda08;
+  border-left: 50px solid #ffda08;
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: tri-circle 6s linear infinite alternate;
+          animation: tri-circle 6s linear infinite alternate;
+}
+@-webkit-keyframes tri-circle {
+  0% {
+    left: 0;
+    top: 20px;
+  }
+  100% {
+    left: 60px;
+    top: -60px;
+  }
+}
+@keyframes tri-circle {
+  0% {
+    left: 0;
+    top: 20px;
+  }
+  100% {
+    left: 60px;
+    top: -60px;
+  }
+}
+.home__circle {
+  width: 80px;
+  height: 80px;
+  background: #3c61b0;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+  -webkit-animation: tri-circle 6s infinite linear alternate;
+          animation: tri-circle 6s infinite linear alternate;
+}
+.home__content {
+  text-align: center;
+  font-size: 20px;
+}
+.home__content h1 {
+  font-size: 80px;
+}
+.home__smalltriangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-top: 50px solid #3c61b0;
+  border-right: 50px solid #3c61b0;
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: square 6s infinite linear alternate;
+          animation: square 6s infinite linear alternate;
+}
+.home__square {
+  border: 20px solid #00caf2;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  z-index: 0;
+  -webkit-animation: square 6s infinite linear alternate;
+          animation: square 6s infinite linear alternate;
+}
+@-webkit-keyframes square {
+  0% {
+    left: 0;
+    top: 20px;
+  }
+  100% {
+    left: -40px;
+    top: 80px;
+  }
+}
+@keyframes square {
+  0% {
+    left: 0;
+    top: 20px;
+  }
+  100% {
+    left: -40px;
+    top: 80px;
+  }
+}
+
+.geometric .row {
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.geometric .col {
+  padding: 5px;
+  position: relative;
+}
+.geometric__smallcircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ffda08;
+  margin: 0 0 20px;
+  -webkit-animation: square 6s infinite linear alternate;
+          animation: square 6s infinite linear alternate;
+}
+.geometric__semicircle {
+  width: 100px;
+  height: 200px;
+  background: #00caf2;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.geometric__quatarcircle {
+  width: 100px;
+  height: 100px;
+  background: #3c61b0;
+  border-bottom-left-radius: 100px;
+}
+.geometric__smalltriangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid #3c61b0;
+  border-right: 20px solid #3c61b0;
+  position: absolute;
+  z-index: 1;
+}
+.geometric__square {
+  border: 10px solid #00caf2;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 0;
+}
+.geometric__orange {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ff643d;
+  position: absolute;
+  -webkit-animation: orange 6s infinite linear alternate;
+          animation: orange 6s infinite linear alternate;
+}
+.geometric__smallsquare {
+  width: 100px;
+  height: 100px;
+  background: #00caf2;
+  position: absolute;
+  -webkit-animation: orange 6s infinite linear alternate;
+          animation: orange 6s infinite linear alternate;
+}
+@-webkit-keyframes orange {
+  0% {
+    left: 0;
+    top: 20px;
+  }
+  100% {
+    left: 40px;
+  }
+}
+@keyframes orange {
+  0% {
+    left: 0;
+    top: 20px;
+  }
+  100% {
+    left: 40px;
+  }
+}
+.geometric .shape__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.geometric__bigtriangle {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-top: 100px solid transparent;
+  border-right: 100px solid #ff643d;
+  border-bottom: 100px solid #ff643d;
+  z-index: 0;
+}
+.geometric__bigcircle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #ffda08;
+  position: absolute;
+  z-index: 1;
+}
+
+.about {
+  padding: 30px 150px;
+}
+.about .col {
+  font-size: 15px;
+}
+.about__title {
+  text-align: center;
+}
+.about__title h2 {
+  padding: 20px;
+  margin: 0;
+  font-size: 30px;
+}
+
+.testimonial {
+  padding: 20px 150px;
+}
+.testimonial h2 {
+  font-size: 40px;
+}
+.testimonial h5 {
+  font-size: 20px;
+}
+.testimonial__card {
+  position: relative;
+}
+.testimonial__square {
+  width: 100px;
+  height: 100px;
+  background: #3c61b0;
+  position: absolute;
+  z-index: 0;
+}
+.testimonial__triangle {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-top: 100px solid transparent;
+  border-right: 100px solid #ffda08;
+  border-bottom: 100px solid #ffda08;
+  position: absolute;
+  z-index: 0;
+}
+.testimonial__still img {
+  position: absolute;
+  z-index: 1;
+}
+
+.skills {
+  padding: 30px 120px 150px 120px;
+}
+.skills ul li {
+  padding: 10px 0;
+}
+.skills ul li::marker {
+  color: #00caf2;
+}
+.skills ul li a {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+/*# sourceMappingURL=main.css.map */
